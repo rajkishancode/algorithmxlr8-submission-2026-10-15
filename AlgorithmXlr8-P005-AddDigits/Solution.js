@@ -11,11 +11,11 @@ function addDigits(num){
     let temp = num;
 
     while(temp > 0){
-        digitSum += temp % 10;
-        temp = Math.floor(temp / 10); 
+            digitSum += temp % 10; // Get the last digit
+            temp = Math.floor(temp / 10); // Remove the last digit
     }
-    num = digitSum;
+    num = digitSum; // Replace num with the digit sum
   }
-  return num;
+  return num; // Return the single digit
 }
 console.log(addDigits(num))
